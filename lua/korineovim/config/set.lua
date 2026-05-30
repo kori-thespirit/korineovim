@@ -9,6 +9,7 @@ vim.opt.list = true
 vim.opt.listchars = "eol:.,tab:>-,trail:~,extends:>,precedes:<"
 
 
+vim.opt.linebreak = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
