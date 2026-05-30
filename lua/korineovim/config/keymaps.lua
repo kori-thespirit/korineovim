@@ -42,6 +42,8 @@ vim.keymap.set("n", "<leader>,","a, \\<Esc>v\"0p", { desc = 'Add a comma and spa
 -- " Move the cursor to the new line below before pasting the yanked text
 vim.keymap.set("n", "<leader>*20",":let @* = @0<CR>", { desc = 'Copy from persistent register(0) to clipboard register (*)'})
 vim.keymap.set("n", "<leader>02*",":let @0 = @*<CR>", { desc = 'Copy from clipboard register (*) to persistent register(0)'})
+vim.keymap.set("n", "p","]p", { desc = 'Paste text auto indent below'})
+vim.keymap.set("n", "P","[p", { desc = 'Paste text auto indent above'})
 -- nnoremap <leader><Enter>p o<Esc>0"0p
 -- nnoremap  :let @0 = @*<CR>
 -- "" Copy from persistent register(0) to clipboard register (*)
