@@ -8,11 +8,17 @@ vim.keymap.set("n", "<c-k>", "<c-w>k", { desc = 'Move to upper window'})
 vim.keymap.set("n", "<c-h>", "<c-w>h", { desc = 'Move to left window'})
 vim.keymap.set("n", "<c-l>", "<c-w>l", { desc = 'Move to right window'})
 
--- Resize split windows 
-vim.keymap.set("n", "<c-up>","<c-w>+", { desc = 'Expand horizontal of current window'})
-vim.keymap.set("n", "<c-down>","<c-w>-", { desc = 'Shrink horizontal line of current window'})
-vim.keymap.set("n", "<c-left>","<c-w>>", { desc = 'Expand vertical of current window'})
-vim.keymap.set("n", "<c-right>","<c-w><", { desc = 'Shrink vertical line of current window'})
+-- Resize split windows
+-- vim.keymap.set("n", "<c-up>","<c-w>+", { desc = 'Expand horizontal of current window'})
+-- vim.keymap.set("n", "<c-down>","<c-w>-", { desc = 'Shrink horizontal line of current window'})
+-- vim.keymap.set("n", "<c-left>","<c-w>>", { desc = 'Expand vertical of current window'})
+-- vim.keymap.set("n", "<c-right>","<c-w><", { desc = 'Shrink vertical line of current window'})
+
+-- Resize split windows with customize size
+vim.keymap.set("n", "<c-up>",":resize +5<CR>", { desc = 'Expand horizontal of current window'})
+vim.keymap.set("n", "<c-down>",":resize -5<CR>", { desc = 'Shrink horizontal line of current window'})
+vim.keymap.set("n", "<c-left>",":vertical resize +5<CR>", { desc = 'Expand vertical of current window'})
+vim.keymap.set("n", "<c-right>",":vertical resize -5<CR>", { desc = 'Shrink vertical line of current window'})
 
 vim.keymap.set("n", "<S-h>",":bprev<CR>", { desc = 'To previous buffer'})
 vim.keymap.set("n", "<S-l>",":bnext<CR>", { desc = 'To next buffer'})
