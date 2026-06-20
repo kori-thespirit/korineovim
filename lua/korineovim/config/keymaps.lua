@@ -46,8 +46,10 @@ vim.keymap.set("n", "<leader>p","a \\<Esc>v\"0p", { desc = 'Add a space then yan
 vim.keymap.set("n", "<leader>P","\"0Pa <Esc>", { desc = 'Add a space then yanked text at the begining of line'})
 vim.keymap.set("n", "<leader>,","a, \\<Esc>v\"0p", { desc = 'Add a comma and space before pasting the yanked text'})
 -- " Move the cursor to the new line below before pasting the yanked text
-vim.keymap.set("n", "<leader>*20",":let @* = @0<CR>", { desc = 'Copy from persistent register(0) to clipboard register (*)'})
-vim.keymap.set("n", "<leader>02*",":let @0 = @*<CR>", { desc = 'Copy from clipboard register (*) to persistent register(0)'})
+-- vim.keymap.set("n", "<leader>*20",":let @* = @0<CR>", { desc = 'Copy from persistent register(0) to clipboard register (*)'})
+-- vim.keymap.set("n", "<leader>02*",":let @0 = @*<CR>", { desc = 'Copy from clipboard register (*) to persistent register(0)'})
+vim.keymap.set('n', '<leader>fn', ':let @+=expand("%:t")<CR>', { desc = 'Copy file name' })
+vim.keymap.set('n', '<leader>fp', ':let @+=expand("%")<CR>', { desc = 'Copy relative path' })
 -- nnoremap <leader><Enter>p o<Esc>0"0p
 -- nnoremap  :let @0 = @*<CR>
 -- "" Copy from persistent register(0) to clipboard register (*)
