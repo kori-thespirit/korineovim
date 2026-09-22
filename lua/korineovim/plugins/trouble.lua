@@ -1,21 +1,36 @@
+local config = {
+    modes = {
+        diagnostics_buffer = {
+            mode = "diagnostics",
+            filter = { buf = 0 },
+
+        },
+    },
+    icons = {
+        indent = {
+            last          = "╰╴", -- rounded
+        },
+    }
+}
+
 return {
     "folke/trouble.nvim",
-    opts = {}, -- for default options, refer to the configuration section for custom setup.
+    opts = config, -- for default options, refer to the configuration section for custom setup.
     cmd = "Trouble",
     keys = {
         {
             "<leader>xx",
-            "<cmd>Trouble diagnostics toggle win.position=bottom<cr>",
+            "<cmd>Trouble diagnostics toggle<cr>",
             desc = "Diagnostics (Trouble)",
         },
         {
             "<leader>xX",
-            "<cmd>Trouble diagnostics toggle filter.buf=0 <cr>",
+            "<cmd>Trouble diagnostics toggle<cr>",
             desc = "Buffer Diagnostics (Trouble)",
         },
         {
             "<leader>cs",
-            "<cmd>Trouble symbols toggle focus=true win.size=0.4<cr>",
+            "<cmd>Trouble symbols toggle focus=true win.size=0.2<cr>",
             desc = "Symbols (Trouble)",
         },
         {
