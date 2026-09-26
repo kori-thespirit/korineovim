@@ -29,5 +29,9 @@ return {
       })
 
     vim.cmd.colorscheme("tokyonight-storm")
+    vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#4b71d1", bg = "NONE" })
+    vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#4b71d1", bg = "NONE" })
+    vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#e3f545", bold = true })
+    vim.api.nvim_set_hl(0, "Comment", { fg = "#b85ec4", bold = true })
   end
 }
