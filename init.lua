@@ -10,6 +10,17 @@ require("mason").setup()
 require("korineovim.dap_configs.openocd_local")
 -- require("korineovim.dap_configs.macOS_debug")
 -- require("korineovim.dap_configs.LenovoUbuntuServer_remote_debug")
+-- vim.g.clipboard = {
+--     name = "OSC52",
+--   copy = {
+--     ['+'] = require('vim.ui.clipboard.osc52').copy('+'),
+--     ['*'] = require('vim.ui.clipboard.osc52').copy('*'),
+--   },
+--   paste = {
+--     ['+'] = require('vim.ui.clipboard.osc52').paste('+'),
+--     ['*'] = require('vim.ui.clipboard.osc52').paste('*'),
+--   },
+-- }
 vim.opt.clipboard = "unnamedplus"
 
 
