@@ -45,6 +45,8 @@ vim.keymap.set("n", "<leader>\\2/",":%s/\\///g<CR>", { desc = 'Convert \\ to / p
 vim.keymap.set("n", "<leader>p","a \\<Esc>v\"0p", { desc = 'Add a space then yanked text at the end of the word'})
 vim.keymap.set("n", "<leader>P","\"0Pa <Esc>", { desc = 'Add a space then yanked text at the begining of line'})
 vim.keymap.set("n", "<leader>,","a, \\<Esc>v\"0p", { desc = 'Add a comma and space before pasting the yanked text'})
+vim.keymap.set("n", "<leader>/*",":%s/^\\(\\s\\+\\)\\/\\/\\(.*\\)/\\1\\/*\\2 *\\/<CR>", { desc = 'Convert // to /* */ comment'})
+-- vim.keymap.set("n", "<leader>/*",":%s/^\(\s\+\)\/\/\(.*\)/\1\/*\2 *\/<CR>", { desc = 'Convert // to /* */ comment'})
 -- " Move the cursor to the new line below before pasting the yanked text
 -- vim.keymap.set("n", "<leader>*20",":let @* = @0<CR>", { desc = 'Copy from persistent register(0) to clipboard register (*)'})
 -- vim.keymap.set("n", "<leader>02*",":let @0 = @*<CR>", { desc = 'Copy from clipboard register (*) to persistent register(0)'})
