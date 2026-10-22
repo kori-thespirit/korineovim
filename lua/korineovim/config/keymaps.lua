@@ -35,6 +35,7 @@ vim.keymap.set("n", "<leader><Tab>t",":tab terminal<CR>", { desc = 'Open termina
 -- Tab window manipulation
 vim.keymap.set("n", "<leader><Tab>o",":tabnew<CR>", { desc = 'Open new tab'})
 vim.keymap.set("n", "<leader><Tab>h",":tabprevious<CR>", { desc = 'Switch to previous tab'})
+vim.keymap.set("n", "<leader><Tab>f",":tabfind", { desc = 'Find and put file in new tab'})
 vim.keymap.set("n", "<leader><Tab>l",":tabnext<CR>", { desc = 'Switch to next tab'})
 vim.keymap.set("n", "<leader><Tab>x",":tabclose<CR>", { desc = 'Close current tab'})
 vim.keymap.set("n", "<leader><Tab>0",":tabfirst<CR>", { desc = 'Move to first tab'})
