@@ -30,8 +30,13 @@ return {
         },
         {
             "<leader>cs",
-            "<cmd>Trouble symbols toggle focus=true win.size=0.2<cr>",
+            "<cmd>Trouble symbols toggle focus=true win.size=0.3<cr>",
             desc = "Symbols (Trouble)",
+        },
+        {
+            "<leader>gd",
+            "<cmd>Trouble lsp_definitions<cr>",
+            desc = "Go to definitions",
         },
         {
             "<leader>cl",
