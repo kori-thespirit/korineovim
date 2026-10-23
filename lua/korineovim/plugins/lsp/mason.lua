@@ -1,10 +1,5 @@
 return {
     "mason-org/mason-lspconfig.nvim",
-    opts = {
-        ensure_installed = {
-            "lua_ls",
-        }
-    },
     dependencies = {
         "mason-org/mason.nvim",
         "neovim/nvim-lspconfig",
@@ -17,5 +12,24 @@ return {
                 }
             },
         },
-    }
+    },
+    config = function()
+        require("mason").setup()
+        require("mason-lspconfig").setup({
+            ensure_installed = {
+                "lua_ls",
+                "clangd",
+                "neocmake",
+                -- "pyright",
+                -- "yamlls",
+                -- "docker_compose_language_service",
+                -- "dockerls",
+                "bashls",
+                -- "jsonls",
+                -- "nginx_language_server",
+            },
+            automatic_enable = true,
+
+        })
+    end
 }

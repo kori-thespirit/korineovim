@@ -12,8 +12,6 @@ vim.lsp.config ("lua_ls", {
         '.git',
     }
 })
-vim.lsp.enable("lua_ls");
-vim.lsp.enable("clangd");
 local severity = vim.diagnostic.severity
 
 vim.diagnostic.config({
