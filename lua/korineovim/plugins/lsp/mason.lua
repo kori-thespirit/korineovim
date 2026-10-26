@@ -24,7 +24,7 @@ return {
                 -- "yamlls",
                 -- "docker_compose_language_service",
                 -- "dockerls",
-                "bashls",
+                -- "bashls",
                 -- "jsonls",
                 -- "nginx_language_server",
             },
